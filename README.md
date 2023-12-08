@@ -1,5 +1,5 @@
 # STM32 DS18B20 Temperature Sensor Library
-**Finally**, a working C Library for interfacing the DS18B20 Temperature Sensor with a STM32 like the STM32L452 (NUCLEO)!
+**F I N A L L Y**, a working C Library for interfacing the DS18B20 Temperature Sensor with a STM32 like the STM32L452 (NUCLEO)!
 
 Based on the Library by https://controllerstech.com/ds18b20-and-stm32/
 
