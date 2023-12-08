@@ -6,8 +6,8 @@ Based on the Library by https://controllerstech.com/ds18b20-and-stm32/
 # Usage
 Using the Library is very easy. Follow the steps.
 
-0. Enable any general purpose timer like TIM16. According to your system clock, set Prescaler and ARR values to make it tick every microsecond.  
-> For instance, let's say TIM16 is used with 80 MHz HCLK. To work in the microsecond domain, set the Prescaler value to 80. Since 1/80,000,000 * 80 = 1e-6 sec
+0. Enable any general purpose timer like `TIM16`. According to your system clock, set Prescaler and ARR values to make it tick every microsecond.  
+> For instance, let's say TIM16 is used with 80 MHz HCLK. To work in the microsecond domain, set the Prescaler value to 80. Since 1/80,000,000 * 80 = 1e-6 sec = 1 us
 1. Copy the four files of the src folder to your source / include folder.
 2. Include the two header files 
         
@@ -19,6 +19,12 @@ Using the Library is very easy. Follow the steps.
 4. Create a new DS18B20 object
         
         DS18B20 sensor;
-5. Use the implemented functions to read the temperature
+
+5. Initialise TIMER and DS18B20 sensor  
+   
+        TIMER_Init(&timer, &htim16);
+        DS18B20_Init(&sensor, &timer);
+           
+7. Use the implemented functions to read the temperature
         
         float temperature = DS18B20_readTemperature(&sensor);
