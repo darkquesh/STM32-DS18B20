@@ -10,25 +10,29 @@ Using the Library is very easy. Follow the steps.
 > For instance, let's say TIM16 is used with 80 MHz HCLK. To work in the microsecond domain, set the Prescaler value to 80. Since 1/80,000,000 * 80 = 1e-6 sec = 1 us
 
   ![TIM16 settings in STM32CubeIDE](/assets/tim16_values.JPG)
-  
-1. Copy the four files of the src folder to your source / include folder.
-2. Include the two header files 
+
+1. Download the codes to your machine
+
+        git clone https://github.com/darkquesh/STM32-DS18B20.git
+   
+3. Copy the four files of the src folder to your source / include folder (also `main.c` if you prefer).  
+4. Include the two header files 
         
         #include "Timing.h"
-        #include "DS18B20.h"
-3. Create a new TIMER object by using a hardware timer. 
+        #include "DS18B20.h"  
+5. Create a new TIMER object by using a hardware timer. 
         
-        TIMER timer;
-4. Create a new DS18B20 object
+        TIMER timer;  
+6. Create a new DS18B20 object
         
         DS18B20 sensor;
 
-5. Initialise TIMER and DS18B20 sensor  
+7. Initialise TIMER and DS18B20 sensor  
    
         TIMER_Init(&timer, &htim16);
         DS18B20_Init(&sensor, &timer);
            
-7. Use the implemented functions to read the temperature
+8. Use the implemented functions to read the temperature
         
         float temperature = DS18B20_readTemperature(&sensor);
 
