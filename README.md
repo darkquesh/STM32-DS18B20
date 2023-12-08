@@ -8,6 +8,9 @@ Using the Library is very easy. Follow the steps.
 
 0. Enable any general purpose timer like `TIM16`. According to your system clock, set Prescaler and ARR values to make it tick every microsecond.  
 > For instance, let's say TIM16 is used with 80 MHz HCLK. To work in the microsecond domain, set the Prescaler value to 80. Since 1/80,000,000 * 80 = 1e-6 sec = 1 us
+
+  ![TIM16 settings in STM32CubeIDE](/assets/tim16_values.JPG)
+  
 1. Copy the four files of the src folder to your source / include folder.
 2. Include the two header files 
         
