@@ -37,4 +37,10 @@ Using the Library is very easy. Follow the steps.
         float temperature = DS18B20_readTemperature(&sensor);
 
 
+# References
+* SparkFun Electronics. “DS18B20 Datasheet”. Programmable Resolution 1-Wire Digital Thermometer Datasheet, https://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf
+* vtx22. “VTX22/STM32-DS18B20.” GitHub, https://github.com/vtx22/STM32-DS18B20
+* Newton, Alex. “Interfacing DS18B20 Temperature Sensor with STM32.” How To Electronics, 21 Aug. 2022, https://how2electronics.com/interfacing-ds18b20-temperature-sensor-with-stm32/
+
+  
 *12/2023*
