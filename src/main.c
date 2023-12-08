@@ -2,7 +2,8 @@
 /**
   ******************************************************************************
   * @file           : main.c
-  * @brief          : Main program body
+  * @brief          : DS18B20 temperature sensor example on NUCLEO-L452RE-P
+  * @author	    : github.com/darkquesh
   ******************************************************************************
   * @attention
   *
