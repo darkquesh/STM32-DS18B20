@@ -28,3 +28,6 @@ Using the Library is very easy. Follow the steps.
 7. Use the implemented functions to read the temperature
         
         float temperature = DS18B20_readTemperature(&sensor);
+
+
+*12/2023*
